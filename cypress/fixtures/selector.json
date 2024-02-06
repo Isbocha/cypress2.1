@@ -12,5 +12,6 @@
   "bookingСode": "Получить код бронирования",
   "electronicTicket": "Электронный билет",
   "loginButton": ".login__button",
-  "pushButton": ".acceptin-button"
+  "pushButton": ".acceptin-button",
+  "movieTitle": ":nth-child(2) > .movie__info > .movie__description > .movie__title"
 }
