@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+
+    "test:admin" : "npx cypress run --record --group admin --spec \"cypress/e2e/admin.cy.js\" --ci-build-id 4",
+    "test:startPage" : "npx cypress run --record --group startPage --spec \"cypress/e2e/startPage.cy.js\" --ci-build-id 4",
+    "test:tickets" : "npx cypress run --record --group tickets --spec \"cypress/e2e/tickets.cy.js\" --ci-build-id 4",
+    "test:parallel" : "npm run test:admin & npm run test:startPage & npm run test:tickets"
   },
   "keywords": [],
   "author": "",
