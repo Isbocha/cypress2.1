@@ -4,11 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
-    "test:admin" : "npx cypress run --record --group admin --spec \"cypress/e2e/admin.cy.js\" --ci-build-id 4",
-    "test:startPage" : "npx cypress run --record --group startPage --spec \"cypress/e2e/startPage.cy.js\" --ci-build-id 4",
-    "test:tickets" : "npx cypress run --record --group tickets --spec \"cypress/e2e/tickets.cy.js\" --ci-build-id 4",
-    "test:parallel" : "npm run test:admin & npm run test:startPage & npm run test:tickets"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:admin:chrome" : "npx cypress run --record --spec \"cypress\\e2e\\admin.cy.js\" --group admin:chrome --browser chrome",
+    "test:startPage:chrome" : "npx cypress run --record --spec \"cypress\\e2e\\startPage.cy.js\" --group startPage:chrome --browser chrome",
+    "test:tickets:chrome" : "npx cypress run --record --spec \"cypress\\e2e\\tickets.cy.js\" --group tickets:chrome --browser chrome",
+    "test:parallel:chrome" : "npm run -p -c test:admin:chrome test:startPage:chrome test:tickets:chrome",
+    "test:admin:edge" : "npx cypress run --record --spec \"cypress\\e2e\\admin.cy.js\" --group admin:edge --browser edge",
+    "test:startPage:edge" : "npx cypress run --record --spec \"cypress\\e2e\\startPage.cy.js\" --group startPage:edge --browser edge",
+    "test:tickets:edge" : "npx cypress run --record --spec \"cypress\\e2e\\tickets.cy.js\" --group tickets:edge --browser edge",
+    "test:parallel:edge" : "npm run -p -c test:admin:edge test:startPage:edge test:tickets:edge",
+    "test:admin:electron" : "npx cypress run --record --spec \"cypress\\e2e\\admin.cy.js\" --group admin:electron --browser electron",
+    "test:startPage:electron" : "npx cypress run --record --spec \"cypress\\e2e\\startPage.cy.js\" --group startPage:electron --browser electron",
+    "test:tickets:electron" : "npx cypress run --record --spec \"cypress\\e2e\\tickets.cy.js\" --group tickets:electron --browser electron",
+    "test:parallel:electron" : "npm run -p -c test:admin:electron test:startPage:electron test:tickets:electron",
+    "test:parallel:2browser" : "npm run -p -c test:parallel:chrome test:parallel:edge"
   },
   "keywords": [],
   "author": "",

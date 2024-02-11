@@ -8,7 +8,7 @@
   "chosenDay": "a.page-nav__day:nth-of-type(2)",
   "chosenTime": ":nth-child(2) > .movie-seances__hall > .movie-seances__list > :nth-child(1) > .movie-seances__time",
   "session": "Начало сеанса: 11:00",
-  "chosenPlace": ".buying-scheme__wrapper > :nth-child(9) > :nth-child(9)",
+  "chosenPlace": ".buying-scheme__wrapper > :nth-child(8) > :nth-child(8)",
   "bookingСode": "Получить код бронирования",
   "electronicTicket": "Электронный билет",
   "loginButton": ".login__button",
