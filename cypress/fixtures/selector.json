@@ -3,15 +3,19 @@
   "daysWeek": ".page-nav__day",
   "film": ".movie",
   "adminPage": ".page-header__subtitle",
+  "textTitle": ".page-header__title",
   "title1": "Управление залами",
   "title2": "Конфигурация залов",
+  "title3": "Идёмвкино",
+  "filmTitle": "Зверополис",
   "chosenDay": "a.page-nav__day:nth-of-type(2)",
   "chosenTime": ":nth-child(2) > .movie-seances__hall > .movie-seances__list > :nth-child(1) > .movie-seances__time",
   "session": "Начало сеанса: 11:00",
-  "chosenPlace": ".buying-scheme__wrapper > :nth-child(8) > :nth-child(8)",
+  "chosenPlace": ".buying-scheme__wrapper > :nth-child(3) > :nth-child(3)",
   "bookingСode": "Получить код бронирования",
   "electronicTicket": "Электронный билет",
   "loginButton": ".login__button",
   "pushButton": ".acceptin-button",
-  "movieTitle": ":nth-child(2) > .movie__info > .movie__description > .movie__title"
+  "movieTitle": ":nth-child(2) > .movie__info > .movie__description > .movie__title",
+  "firstFilm" : ":nth-child(1) > .movie__info > .movie__description > .movie__title"
 }

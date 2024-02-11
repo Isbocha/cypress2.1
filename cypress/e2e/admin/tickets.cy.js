@@ -1,5 +1,5 @@
-const user = require("../fixtures/userLoginPassword.json");
-const selector = require("../fixtures/selector.json");
+const user = require("../../fixtures/userLoginPassword.json");
+const selector = require("../../fixtures/selector.json");
 
 it("Should book a ticket", () => {
     cy.visit("http://qamid.tmweb.ru/admin");
